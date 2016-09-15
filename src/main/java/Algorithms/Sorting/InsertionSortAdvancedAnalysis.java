@@ -28,6 +28,22 @@ public class InsertionSortAdvancedAnalysis {
     public static long insertSort(int[] ar) {
         long count = 0;
         // Compute the required count
+        for (int i = 1; i < ar.length; i++) {
+            int temp = ar[i];
+            for (int j = i - 1; j >= 0; j--) {
+                if (ar[j] > temp) {
+                    ar[j + 1] = ar[j];
+                    count++;
+                } else {
+                    ar[j + 1] = temp;
+                    break;
+                }
+                if (j == 0) {
+                    ar[0] = temp;
+                }
+            }
+
+        }
         return count;
 
     }
