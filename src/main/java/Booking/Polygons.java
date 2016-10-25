@@ -4,7 +4,6 @@ package Booking;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.regex.*;
 
 /**
  * Created by kashishsinghal on 22/09/16.
@@ -12,14 +11,16 @@ import java.util.regex.*;
 public class Polygons {
     public static void main(String[] args) {
         int squares = 0;
-        int reactangles = 0 ;
+        int reactangles = 0;
         int polygons = 0;
         InputStreamReader inputStreamReader = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(inputStreamReader);
         String str;
         try {
             while ((str = br.readLine()) != "") {
-                if (str == null) { break; }
+                if (str == null) {
+                    break;
+                }
 
 
                 String[] line = str.split(" ");
