@@ -27,6 +27,5 @@ public class SuffixArrayConstruction {
         for(int i = 0;i<length;i++) {
             System.out.println(suffixList.get(i));
         }
-
     }
 }
